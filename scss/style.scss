@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$primario: red;
+// $theme-colors: (
+//     "primario": $primario
+// );
+
+$body-bg: #f7a7a7;
+$body-color: #272727;
+
+.container{
+    margin-top: 200px;
+    max-width: 800px;
+    
+}
