@@ -28,4 +28,23 @@
    2. @import "../node_modules/bootstrap/scss/variables";
    3. @import "../node_modules/bootstrap/scss/mixins";
 
-6. Para acabar, creamos o introducimos el formulario que consideremos necesario en el index.html y creamos un nuevo archivo js en el que introducimos la validación para este mismo formulario. Una vez todo está enlazado correctamente dentro del index.html la página debería ser funcional y mostrar un formulario validable dentro de http://localhost:1234 .
+6. Para acabar este punto, creamos o introducimos el formulario que consideremos necesario en el index.html y creamos un nuevo archivo js en el que introducimos la validación para este mismo formulario. Una vez todo está enlazado correctamente dentro del index.html la página debería ser funcional y mostrar un formulario validable dentro de http://localhost:1234 .
+
+7. El siguiente paso consiste en crear un archivo php con el fin de recoger los datos que introducimos en el formulario. Para ello creamos el archivo login_basico.php e introducimos los echos correspondientes con los valores que solicitamos en el formulario.
+
+![image-20220121100314380](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220121100314380.png)
+
+7. Ahora editamos en Index.html enlazando los apartados correspondientes con el archivo php. Lo que añadimos será:
+
+   1. "name" y su valor en los inputs de cada apartado.
+
+   2. "action" al inicio del formulario para enlazar el archivo php al mismo.
+
+   3. "method= "post" para que nos muestre la información en pantalla una vez validamos el formulario. 
+
+      ![image-20220121100244317](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220121100244317.png)
+
+8. Reiniciamos el servidor desde la consola escribiendo nuevamente npm start y al rellenar el formulario y pulsar enviar debería mostrar un listado con las secciones rellenadas y sus valores.
+
+![image-20220121104159289](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220121104159289.png)
+
