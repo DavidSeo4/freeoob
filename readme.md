@@ -46,5 +46,17 @@
 
 8. Reiniciamos el servidor desde la consola escribiendo nuevamente npm start y al rellenar el formulario y pulsar enviar debería mostrar un listado con las secciones rellenadas y sus valores.
 
-![image-20220121104159289](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220121104159289.png)
+   ![](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220121104159289.png)
+
+9. Con el fin de incoporar nuevos scrips al gestor package.json añadimos en el apartado de scripts los siguientes:
+
+   1. "prebuild": "npx rimraf build",
+   2.  "dev": "parcel src/index.html src/validation.js scss/style.scss src/assets/*",  
+   3. *"build": "parcel build src/index.html src/index.js src/css/custom.scss src/assets/* --public-url . -d build/",
+
+10. Ahora introducimos en la terminal el comando "npm run-script build" y nos creará la carpeta build dentro de nuestro directorio con los mismos archivos que en la carpeta dist menos "login_basico.php", el cual tendremos que copiar a mano. Ahora podremos acceder y realizar lo mismo desde esa dirección que desde "dist".
+
+    ![image-20220124125030318](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220124125030318.png)
+
+
 
